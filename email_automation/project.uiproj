@@ -1,0 +1,6 @@
+{
+  "Name": "email_automation",
+  "ProjectType": "Process",
+  "Description": "is an automation that can send  custom message to number of emails",
+  "MainFile": "Main.xaml"
+}
