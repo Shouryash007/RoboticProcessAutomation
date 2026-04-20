@@ -1,0 +1,6 @@
+{
+  "Name": "App review sentiment analysis",
+  "ProjectType": "Process",
+  "Description": "The process takes a set amount of reviews from a social media or app reviews and does sentimental analysis providing the review category",
+  "MainFile": "Main.xaml"
+}

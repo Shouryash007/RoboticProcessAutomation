@@ -1,0 +1,419 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="901.2,5132.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="app_name" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="review_count" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="521.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the name of the app" Title="App Name" TopMost="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[app_name]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Android Apps on Google Play" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,4836" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b3597b03-80d2-4eae-b1ab-f4f210bbe872" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,4642.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="time_of_review" />
+              <Variable x:TypeArguments="x:String" Name="review" />
+              <Variable x:TypeArguments="x:String" Name="helpful" />
+              <Variable x:TypeArguments="x:String" Name="temp" />
+              <Variable x:TypeArguments="sd2:DataTable" Name="dtreviews" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'help_outline'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,316" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3597b03-80d2-4eae-b1ab-f4f210bbe872" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="play.google.com/store/games" CVScreenId="769fe846-7836-4cbe-83af-7753e0201162" ContentHash="I6kMzAJOLkiej1KyGxoHSQ" CvElementArea="1730, 140, 35, 33" CvType="Icon" DesignTimeRectangle="1733, 142, 30, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" Guid="2b9392c9-ca89-4e13-bd71-121cf6d1e975" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJvSURBVFhH7ZZbTxNBGIb5p2qQ0NbWUrCtBUvEBg8NGAGBIkRCQkxEjV4Y45VBwSIEJV5xVjBiiUha2tK09vCZd7Cb9dvZQ1caveiTTNLsvPvNszM7022i/4QmfuFf0RDhNEQ4NYtkMln6cXgoWip1RJVKhUdsYUkke3xMj548owveDjrT7PijOT0+mpyaFpm/wVRkdW2DvO1BjQBvkPyw8pHfbhlDkdW1dfHE1cEc7pOnn3+7QPF3S+K3epZanB6am4/zMpbQFfl+cECXgleUQaL9d+goneYxyufzNHF/is6ed4qczx+iRGKfx0zRFZl5/FSR6Om9RdlslkcUisUi3R29p+SnHzzkEVOkIul0hkLhHlG01eWl9Y1NHtHwdW+PPG1+cY//cpiSqRSPGCIV2dzaJoe7TRTtvdlHhUKBRzRgGw8Ox2qSVyMVQREUQ9GBoVHerYt6OeMLi7zbkLqI4MVdXFrm3YZIRXZ2v5Dr4sm2vBq5Qblcjkc0lEolivYPiHtwL2rUglQEWzJyPSqKNre6afn9Co9oUM9iV3fEcJfJkIqAV7NvlLOhPdBJiX39swGDYotXl+X5i5c8YoquCJbj2u/iaDjctrY/8Rh9SyQUCbRgZzclk7VtXaArAjALgVBYGQRP2xHsouHYOI1NTIqz5lyLS+mvtqGRMbG8tWAoAnCs990eVJZJ1tCHGcP7ZFfGVATgsPq8s0sjsXHy+AJiYDT8xjX0lctlmn09Z1vGkohVIGxX5lRFgF2ZUxcBdmTqIgJkMvhTLBR+8qigbiJALYMvPXzx6VFXEQAZfMvKDkM1dRexSkOE0xDh/ALSKvFsyWn57AAAAABJRU5ErkJggg==" InformativeScreenshot="7475ad2d04ddbee53db73add561e2fbd.png" Reference="HQie7_-HzUqbSIM2kD6Miw/uO0StufDzUeTUvQO-jG38A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='play.google.com/store/games?hl=en_IN' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="769fe846-7836-4cbe-83af-7753e0201162" CvElementArea="1792, 141, 33, 33" CvType="Icon" DesignTimeRectangle="1793, 142, 30, 30" FuzzySelectorArgument="&lt;webctrl aaname='help_outline' tag='I' type='' class='google-material-icons notranslate r9optf' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='help_outline' /&gt;" Guid="3e4e9cd8-6146-4c3c-b680-142836845370" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALgSURBVFhH7ZeLT9JRFMf9T2vTEpxiaGqhMcmstbWcWqhZbaWZvWau11yP5QvB2mrmmwCxDMKg4YBwoKd9b/vdfr/7e/BwDdr8bL/BOPee+73nnnN+lwoqEyrEH0rFoRCR/1vI3t4efY9EyDXnocnpWf74Axu0u7srDs+LgoQEN79Qd28fVVbX0pFKk+ZztMpMtjMOcnveMcH5kpeQRDJJfQM32CLiwkbPqdZ2CmwERXea5BTi9fqovqFFtePJqRmKxX7S/v4+G5dKpWhxaVkVMXwff/Kcj9PDUMjK6hqZ66yKHX72+XM6jcfjigji88Gjx4bzdIWEwmFqaLZxEV09TkqlfnE7zn8juEmv3rylsfGn9OHjgiJRsejEy9c8OvicmnFxu4imkGw2S86B67oiQqEwtbWfU+WEqdZKLvc837ko5mRLG0W2t2Ur/UVTyNLyCh0zW9hkRAXRkYAjOBRFSA8WnZ1z8/GZTIau9F3j9uGRe9wmRyUEu+gfvMkm4WwRejlwJDm1nz1P30IhFq3bw3d5TrTaOyiRSPA5X7e2qO5EE49KNBZT+AQqIRhkbTqtOSmZTJLd0clscIwFJLDzS5d7mO14jYVWVte5TdycZ/49t0mohCx8WqQqUx2b1OscUNjS6TRzgi6K5EQuybn/cIxHC11XDuZJEbs1NKKwAZWQ6RkXd/bsxYRo1kUekeqaelpb9yrsqLAaSyOzd3VfVZWySojRrvRApJz9g3zHqDgxWj+iUapv/NMY2zsusAYo58BCkJSOzot8jljqEgULKeRoxH6DMsURaVHw0Rglq4jcOd4/aO16FJysRuUr4vMHqNlmZy/FoTujoplTVPmKk8SGVgxFNTRg1OLloERRqhiHJNei6BYPxCRErqBERXIJOfBLD+S6BoD4zg7Nutys0yJx5YgiiroGSJTFxUiiLK6KEjgCvEcKvTwjJxDBfMhLiETJ/06IlPwP1r/kUIjIbyFSOCuMKMAUAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'searchwest'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b3597b03-80d2-4eae-b1ab-f4f210bbe872" Text="[app_name + &quot;[k(Enter)]&quot;]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="play.google.com/store/games" CVScreenId="5243d872-59f4-4025-b732-89c1c50590fd" ContentHash="hZf8qvbvxkOAiDzFYxP-Ow" CvElementArea="505, 190, 908, 66" CvType="InputBox" DesignTimeRectangle="577, 192, 830, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='HWAcU' placeholder='Search for apps and games' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5143425f-1703-48b0-a3d3-8a607d94c919" InformativeScreenshot="7ed07407735b17930fb014e9574f4a95.png" Reference="HQie7_-HzUqbSIM2kD6Miw/jPzcZnckqEyGbDS1HIshew" ScopeSelectorArgument="&lt;html app='chrome.exe' title='play.google.com/store/games?hl=en_IN' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5243d872-59f4-4025-b732-89c1c50590fd" CvElementArea="505, 190, 908, 66" CvType="InputBox" DesignTimeRectangle="512, 192, 895, 61" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='ePyrDc' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='search' /&gt;" Guid="1e8695dc-2ece-4005-bb22-79fe4c383f41" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="486.4,126.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Instagram'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,316" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3597b03-80d2-4eae-b1ab-f4f210bbe872" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="play.google.com/store/search" CVScreenId="1c14c237-a4a9-43c9-89d6-8f7f4a630dc7" ContentHash="nxwV1ix6z0qzuGJK4LCUDw" CvTextArea="149, 380, 157, 37" CvTextArgument="Instagram" CvType="Text" DesignTimeRectangle="149, 380, 158, 36" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="2dc4cecf-9a31-4788-bf8e-b789a8253eec" InformativeScreenshot="801deb2af6976ff7b58ab15fcdbb1b9e.png" Reference="HQie7_-HzUqbSIM2kD6Miw/fvEMtxpPp0aV0jeSsUrK9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='play.google.com/store/search?q=instagram&amp;amp;c=apps&amp;amp;hl=en_IN' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1c14c237-a4a9-43c9-89d6-8f7f4a630dc7" CvElementArea="147, 290, 225, 44" CvType="InputBox" DesignTimeRectangle="150, 292, 222, 40" FullSelectorArgument="&lt;webctrl class='Gggmbb' css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="645cd1b1-5717-4809-9abf-c859170d1352" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="486.4,126.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,229.6" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="b3597b03-80d2-4eae-b1ab-f4f210bbe872" Version="V5" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'See all reviews(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,316" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3597b03-80d2-4eae-b1ab-f4f210bbe872" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="play.google.com/store/apps/details" CVScreenId="5003a91c-1c76-4de1-850f-c5991b7f537f" ContentHash="C0KNvjhtj0GeoLZHaKWq9Q" CvTextArea="159, 677, 122, 16" CvTextArgument="See all reviews" CvType="Text" DesignTimeRectangle="160, 673, 121, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='See all reviews' tag='SPAN' type='' class='VfPpkd-vQzf8d' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='See all reviews' /&gt;" Guid="b9e5621c-9246-4fab-a706-c9acea005913" InformativeScreenshot="f99008242f28d5ba0b42898464f50d6b.png" Reference="HQie7_-HzUqbSIM2kD6Miw/t0tcbuNwVEWtvlRoPH8hKw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram – Apps on Google Play' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5003a91c-1c76-4de1-850f-c5991b7f537f" CvTextArea="159, 677, 122, 16" CvTextArgument="See all reviews" CvType="Text" DesignTimeRectangle="150, 661, 141, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='See all reviews' tag='BUTTON' type='' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf ksBjEc lKxP2d LQeN7 aLey0c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='See all reviews' /&gt;" Guid="8de2506b-f345-476c-8132-787936cabde0" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:BuildDataTable DataTable="[dtreviews]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="486.4,96" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Review&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;sentiment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;score&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName /&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:FindChildren Children="{x:Null}" DisplayName="Find Children 'DIV'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="486.4,143.2" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+              <ui:FindChildren.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b8d9b2b-5e20-41f0-a488-e532a73229f9" InformativeScreenshot="4b89e5930e66d9f51c1cd82c3428900b" Selector="&lt;webctrl class='jgIq1' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:FindChildren.Target>
+            </ui:FindChildren>
+            <uix:NForEachUiElement DisplayName="For Each UI Element 'InstagramRatings and re…(1)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='content'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="486.4,644.8" sap2010:WorkflowViewState.IdRef="NForEachUiElement_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="b3597b03-80d2-4eae-b1ab-f4f210bbe872" Version="V5">
+              <uix:NForEachUiElement.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,405.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,126.4" sap2010:WorkflowViewState.IdRef="NGetText_6" InUiElement="[content]" ScopeIdentifier="b3597b03-80d2-4eae-b1ab-f4f210bbe872" TextString="[review]" Version="V5" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{review}]" DataTable="[dtreviews]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,215.2" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NForEachUiElement.Body>
+              <uix:NForEachUiElement.Target>
+                <uix:TargetAnchorable BrowserURL="https://play.google.com/store/apps/details?id=com.instagram.android&amp;hl=en_IN" ContentHash="LFW-RQSQ6U-UENn52e63ow" DesignTimeRectangle="519, 137, 900, 872" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='jgIq1' tag='DIV' /&gt;" Guid="19536725-636d-4399-8c24-534683bc5527" InformativeScreenshot="c37d4434a2c92312248ae40618c53fe7.jpg" Reference="HQie7_-HzUqbSIM2kD6Miw/4bipHY8QCkOAAgASpomJiw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram – Apps on Google Play' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NForEachUiElement.Target>
+              <uix:NForEachUiElement.Variables>
+                <Variable x:TypeArguments="ui:UiElement" Name="content" />
+                <Variable x:TypeArguments="x:String" Name="content_Label" />
+              </uix:NForEachUiElement.Variables>
+              <uix:NForEachUiElement.VariablesMetadata>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                  <uuam:VariableMetadata Name="content" Type="ui:UiElement" />
+                  <uuam:VariableMetadata Name="content_Label" Type="x:String" />
+                </scg:List>
+              </uix:NForEachUiElement.VariablesMetadata>
+            </uix:NForEachUiElement>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="486.4,649.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,567.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="451.2,503.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\Asus\Desktop\RPA\sentiment_analysis.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,280" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[dtreviews]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtreviews]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486.4,1364.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd2:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,1188" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="451.2,1124" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\Asus\AppData\Local\Programs\Python\Python310\Lib" Path="C:\Users\Asus\AppData\Local\Programs\Python\Python310\python.exe">
+                      <p:PythonScope.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,895.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="p:PythonObject" Name="pyScript" />
+                              <Variable x:TypeArguments="p:PythonObject" Name="pyResult" />
+                              <Variable x:TypeArguments="x:Object" Name="resultArray" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="416,230.4" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[pyScript]" ScriptFile="C:\Users\Asus\Desktop\RPA\sentiment.py" />
+                            <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="416,126.4" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[pyScript]" Name="analyze_sentiment" Parameters="[Enumerable.Repeat(CurrentRow(&quot;Review_content&quot;).ToString(), 1)]" Result="[pyResult]" />
+                            <p:GetObject x:TypeArguments="x:Object" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="416,126.4" sap2010:WorkflowViewState.IdRef="GetObject`1_1" PythonObject="[pyResult]" Result="[resultArray]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[currentrow("Sentiment")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CType(resultArray, Object())(0).ToString()]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[currentrow("Score")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Double">[CDbl(CType(resultArray, Object())(1).ToString())]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </p:PythonScope.Body>
+                    </p:PythonScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="F9kUgLKOak6d1t8jLgxu4A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOhSURBVFhHxdRfTFNXAMfxI7uExKEPLlvMGNpN/ujcQqDnaimltdziNP5J5Kp7wciY/x5wIRr/vYhuwJJlPChqTHRPoh4o0kRZyPRWo9kfH/wTl5gYffHJmpsoKsi/0+5nTqVQL7S9vc3iwy9p+tDvp+eelgAg73MTLyhTY6ulTO2jTP2DMnVz3Pum9tHZOrI/4CC4RkhYkwhPsCkAu395Lu1c107ZBlCmxu8+ZarTGEo0ywD5XO1hu98H2rkG0yDELlGmfmoMGmcZUNU6wJwnf0NpwA7auToRQuwXytRsYzhjgK8JrLoJcJ48bQbRT5laZ4xnBBAnoPzEUX1QIEydhNiU+2Ed0DLIqloH8C6iDPauVaDnkyLEeilTP8sc0DKICUQTUHHiHEp7lsLetdIMAjJT2+Z0fJfT2FORAWACMRY9CddxP0oDckqEzFQsYTWYcWb7ywMBx5bMANENoKp51BQiFp/dUY8a/zcY1bKBIHnANanSGE4DYA4h4vJ4fF3XCvDgB8A1gjEtG1yTxPq4JuVbBBgR3SgNUNi7VoCe3zgeV5Hb8T1q4uJ8Mh6/Nq5JORYABsSxiyjrKQf1L48iZnXUo7ZbQSSYlSwe2yDXJJcFQAwxEkW4j/ahLFCOD9m3qPP7gKvETDy2p1yTNlgAvEUozcNRxNwT/6I+uBT4k4gLF//MzYxZAijiFFpew3YE2Lb1IXhjHnCHgP+VBX75fwaIuLdlCPPaga37b2Ksogi88Cs8ayzCf/cIwv8Qs4jnXJNq0wKI+LLWYXx+FGjYcwOjlQsQcc1DyOtEaLEHLxoKELlNELmZEhHhmrQyrUsYi89vB3btugKU5yHssiHkK4fuk6F7l+DJIg/6txWnQpzimjQ7rZ9hfHy3iDvzMOb6AiGfA7oiv51AVMkIfZkQcYNrUnHaf0Sm4tMhdhQh/PcMhK9nPeaaVG0MmwIozQPwtA5HL1zKuAHxpNA79HKv7YfIHTIlagog4u6fR6IXbl9jH+DMTx2fRBwLfe2e2b+lmERuEcKDU8NJAbG4OPZDOy8Ajo8xUllgJn5FV+QFuiKTUEkledFQkD6guvkVm4x3A45PMOwuxNPk8Ue6IntEODbLgJI2MNs78aJk8Ve6Im+PD2cMKPsV7McGU/E2XZFzjOGMAXfXrj/82rMQQ+7iRPFeXZHzjUHjLAO4y5bb7y1pnyZ+X1dkpzGUaJYBcR+yafzb/q4rcp0xkGqWAe9rbwByxxyCUuSIPwAAAABJRU5ErkJggg==" InformativeScreenshot="b36a355983e85fe832441d04add2bfca.jpg" Reference="HQie7_-HzUqbSIM2kD6Miw/6mvBw1pvRkGaMWCqSkyzLQ" Selector="&lt;html app='chrome.exe' title='Android Apps on Google Play' /&gt;" Url="https://play.google.com/store/games?hl=en_IN" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
