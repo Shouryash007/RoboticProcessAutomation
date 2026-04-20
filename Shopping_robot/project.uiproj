@@ -1,0 +1,6 @@
+{
+  "Name": "Shoppingrobot",
+  "ProjectType": "Process",
+  "Description": "A robot that looks for the price of a product from different E-commerce websites and gives the details similarly",
+  "MainFile": "Main.xaml"
+}
